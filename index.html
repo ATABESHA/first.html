@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="Buttons.css">
+
+
+
+<script type="text/javascript">
+    function handleChange() {
+        var arr = document.getElementById( 'Language' ) ;
+        window.location = arr.value ;
+    } 
+    </script>
+
+</head>
+
+<body>
+    
+   
+
+   <div class="headerContainer" id="myHeader">   
+          
+     <img class="logo" src="images/AS_Logo.png" alt="logo" >            
+     <button onclick="window.location.href='index.html';" class="HomeButton">Home</button>
+     <button onclick="window.location.href='aboutus.html';"class="AboutUs">Sobre Nosotros</button>
+     <button class="Projects">Proyectos</button>
+     <button class="Contact">Contacto</button>
+    
+
+      <select class="Language" name="Language" id="Language" onchange="handleChange()">
+          <option value='index.html'>Español</option>
+          <option value='indexEN.html'>English</option>
+          <option value='indexFR.html'>Française</option> 
+      </select>  
+    
+      
+
+     
+
+
+  
+</div>
+
+   <img class="foto1" src="images/concrete_bricks_background.jpg" alt="logo">  
+   <a>Just Text</a>
+   <img class="foto2" src="images/concrete_bricks_background.jpg" alt="logo" >
+
+
+   
+   
+   
+   </body>
+
+</html>

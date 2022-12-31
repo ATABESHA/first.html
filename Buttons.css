@@ -1,0 +1,85 @@
+.logo{
+    padding-left: 10%;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 100PX;
+}
+
+button{
+    font-family: Calibri;
+    font-weight: 500;
+    font-size: 20px;
+    border: 0ch;        
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: rgb(37, 37, 37);
+    border-color: white;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition:  0.5s;
+}
+
+.Language{
+font-family: Calibri;
+    font-weight: 500;
+    font-size: 20px;
+    border: 0ch;        
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: rgb(37, 37, 37);
+    border-color: white;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition:  0.5s;
+}
+
+.headerContainer{
+    padding-top: 30px;
+    height: 120px;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+
+.HomeButton{
+    padding-left: 40%; 
+}
+
+button:hover {      
+     color: rgb(254, 208, 61);
+    transition: 0.5s;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+
+.Background-image1{
+    width: 100%;
+}
+
+.foto1{
+    margin-top: 100px;
+    width: 100%;
+}
+
+.foto2{
+    width: 100%;
+}
+
+
+/* Style the header */
+
+.Text1{
+    
+    margin-bottom: 150px;
+}
