@@ -3,11 +3,14 @@
 <html lang="es">
 
 <head>
+    <meta  charset="utf-8">
     <title>Homepage</title>
-    <link rel="stylesheet" href="Buttons.css">
-    <link rel="stylesheet" href="index.footer.css">
+    
+    
+    <link rel="stylesheet" href="navButtons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
-
+    
 <script type="text/javascript">
     function handleChange() {
         var arr = document.getElementById( 'Language' ) ;
@@ -15,70 +18,127 @@
     } 
     </script>
 
+
+    <style>
+    .container1{
+        background-color: rgb(0, 0, 0);
+        max-width: 1600px;
+        width: 95%;
+        margin: auto;
+        padding: 40px 0;
+       
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cont1_Text{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .welcometext{
+        margin: auto;
+        font-size: 40px;
+        color: white;
+    }
+    .welcometext2{
+        margin: auto;
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 20px;
+        color: white;
+    }
+
+    .img1{
+        width: 100%;
+        display: inline;
+        
+    }
+
+    @media (max-width: 858px){
+        .container1{
+        background-color: rgb(5, 5, 5);
+        max-width: 1600px;
+        width: 95%;
+        margin: auto;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        }
+        .img1{
+        width: 100%;
+        }
+        
+    }
+
+    
+        
+    </style>
+    
 </head>
 
 <body>
     
-   <div class="Header">   
-          
-     <img class="logo" src="images/AS_Logo.png" alt="logo" >            
-     <button onclick="window.location.href='index.html';" class="HomeButton">Home</button>
-     <button onclick="window.location.href='aboutus.html';"class="AboutUs">Sobre Nosotros</button>
-     <button class="Projects">Proyectos</button>
-     <button class="Contact">Contacto</button>
-    
-      <select class="Language" name="Language" id="Language" onchange="handleChange()">
-          <option value='index.html'>Español</option>
-          <option value='indexEN.html'>English</option>
-          <option value='indexFR.html'>Française</option> 
-      </select>  
-    
-    </div>  
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <img class="logo" src="images/AS_Logo.png" alt="logo" >
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Language</a></li>
+          </ul>
+      </nav> 
 
-    <div class="underHeader"> ""</div>
-
-    <div class="welcome">
-        <img class="img1" src="images/img1.webp" alt="image1">
-        <div class="welcometext">
-            <h1>Welcome</h1> 
-        </div>    
-        <div class="welcometext2">
-            <p>estamos ubicados en Barcelona, BarLasPatatas es el Restaurante donde los locales van a cenar, beber y socializar. Nuestro menú presenta platos elaborados con los ingredientes más frescos, que seguramente traerán un sabor audaz e inspirador a su vida. Únete a nosotros hoy.</p>
-    </div>
-
-    <div class="SpeMen">Special Menu</div>
-    <div class="Special_Menu">
-        <div class="Soup">
-            <img class="soup" src="images/soup.webp" alt="image1">
-            <div class="Soup_Header">
-                <h1>Soup of the Day</h1>
+        <div class="container1">
+            <div class="cont1_Text">
+                <li class="welcometext">Welcome</li>    
+                <li class="welcometext2">estamos ubicados en Barcelona, BarLasPatatas es el Restaurante donde los locales van a cenar, beber y socializar. Nuestro menú presenta platos elaborados con los ingredientes más frescos, que seguramente traerán un sabor audaz e inspirador a su vida. Únete a nosotros hoy.</li>
             </div>
-            <div class="Soup_describtion">
-                <h1>This latest addition to our menu has already become our customers’ favorite. Day or night, our Soup of the Day is the dish you’ve been craving. Don’t forget to ask your server about our special extras!</h1>
+
+            <div class="cont1_img"> 
+                <img class="img1" src="images/img1.webp" alt="image1">
+            </div>        
+        </div>
+
+        <div class="container1">
+            <div class="cont1_Text">
+                <li class="welcometext">Soup of the Day</li>    
+                <li class="welcometext2">This latest addition to our menu has already become our customers’ favorite. Day or night, our Soup of the Day is the dish you’ve been craving. Don’t forget to ask your server about our special extras!</li>
             </div>
-        </div>
-    </div>
 
-   
-    <div class="shank_div">
-        <img class="shankimg" src="images/shank.webp" alt="image1">
-        <div class="shank_Header">
-            <h1>Lamb Shank</h1>
+            <div class="cont1_img"> 
+                <img class="img1" src="images/soup.webp" alt="image1">
+            </div>        
         </div>
-        <div class="shank_describtion">
-            <h1>With our Lamb Shank we’ve managed to put a new spin on an old classic. Simplicity is the name of the game: we use fresh ingredients and offer a variety of extras on the side. Are you ready for this culinary sensation?</h1>
-        </div>
-    </div>
 
-    <div class="vegetable_div">
-        <img class="vegetableimg" src="images/vegetable.webp" alt="image1">
-        <div class="vegetable_Header">
-            <h1>Vegetable Couscous</h1>
+        <div class="container1">
+            <div class="cont1_Text">
+                <li class="welcometext">Lamb Shank</li>    
+                <li class="welcometext2">With our Lamb Shank we’ve managed to put a new spin on an old classic. Simplicity is the name of the game: we use fresh ingredients and offer a variety of extras on the side. Are you ready for this culinary sensation?</li>
+            </div>
+
+            <div class="cont1_img"> 
+                <img class="img1" src="images/shank.webp" alt="image1">
+            </div>        
         </div>
-        <div class="vegetable_describtion">
-            <h1>Many restaurants have their own take on this recipe, but we’re confident that ours is the best, always prepared to perfection. Share it with friends or have it all to yourself—you’ll enjoy it till the very last bite.</h1>
+
+        <div class="container1">
+            <div class="cont1_Text">
+                <li class="welcometext">Vegetable Couscous</li>    
+                <li class="welcometext2">Many restaurants have their own take on this recipe, but we’re confident that ours is the best, always prepared to perfection. Share it with friends or have it all to yourself—you’ll enjoy it till the very last bite.</li>
+            </div>
+
+            <div class="cont1_img"> 
+                <img class="img1" src="images/vegetable.webp" alt="image1">
+            </div>        
         </div>
-    </div>
+
 
    </body>
 
