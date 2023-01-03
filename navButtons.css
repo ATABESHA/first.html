@@ -58,7 +58,7 @@ a.active,a:hover{
 
 
     
-@media (max-width: 858px){
+@media (max-width: 1300px){
     .checkbtn{
         color: white;
         display: block;        
