@@ -1,0 +1,129 @@
+.menu1{
+    list-style-type: none;
+    max-width: 1600px;
+    width: 70%;
+    margin: auto;
+    padding-left: 30%;
+    padding-top: 30px;
+    display: grid;
+    font-size: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Food_name{
+    overflow: hidden; white-space: nowrap
+}
+.Price{
+    overflow: hidden
+}
+.Food_name::after {content: "...........................................................................";}
+
+
+
+.menu2{
+    height: 150px;
+    width: 70%;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-left: 10%;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.img1{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+}
+.food{
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 22% 78%;
+}
+
+.Name_Price{
+    background-color: rgb(241, 245, 245);
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.Food_name2{
+    font-style: oblique;
+    font-weight: bold;
+    overflow: hidden; white-space: nowrap
+}
+
+.Food_name2::after {content: "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ";}
+
+.food_describtion{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.zzz{
+    padding-top: 100px;
+}
+
+.menustyle{
+    /*border: 1px solid black;*/
+    position: sticky;
+    top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    cursor: pointer;
+    padding-left: 50PX;
+    font-size: 20PX;
+    height: 40PX;
+    text-align: center;
+    background-color: white;
+}
+
+.menu_Style1{
+    position: relative;
+    background-color: rgb(216, 214, 213);
+    border-radius: 5PX;
+    width: 200PX;
+    padding-top: 10PX;
+    transition: 0.5s;
+}
+.menu_Style2{
+    position: relative;
+    background-color: rgb(216, 214, 213);
+    border-radius: 5PX;
+    width: 200PX;
+    padding-top: 10PX;
+    transition: 0.5s;
+}
+.menu_Style3{
+    position: relative;
+    background-color: rgb(216, 214, 213);
+    border-radius: 5PX;
+    width: 200PX;
+    padding-top: 10PX;
+    transition: 0.5s;
+}
+
+.menu_Style1:hover{
+    background-color: rgb(230, 247, 255);
+}
+.menu_Style2:hover{
+    background-color: rgb(230, 247, 255);
+}
+.menu_Style3:hover{
+    background-color: rgb(230, 247, 255);
+}
+
+#Menu1{
+    display: block;
+}
+#Menu2{
+    display: none;
+}
+#Menu3{
+    display: none;
+}

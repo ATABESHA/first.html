@@ -1,0 +1,92 @@
+
+nav{
+    position: fixed;
+    height: 90px;
+    background-color: rgb(187, 214, 255);
+    width: 100%;
+    top: 0;
+    display: block;
+}
+
+.logo{
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+nav ul{
+    position: fixed;
+    right: 150px;
+    top: 0px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+    padding-right: 30px;
+}
+
+.flag{
+    position: fixed;
+    width: 20px;
+    border-radius: 20px;
+    top: 36px;
+    border: 2px solid rgb(0, 0, 0);
+    right: 165px;
+    cursor: pointer;
+}
+nav ul li a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 10px;
+    list-style: none;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.FLAG_IMG{
+    float: left;
+    margin-left: 5px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.Language_menu{
+    display: none;
+    position: fixed;
+    top: 35px;
+    right: -2px;
+    width: 200px;
+    height: 170px;
+}
+
+.l_menu{
+    position: absolute;
+    background-color:  rgb(222, 244, 255);
+    width: 140px;
+    top: 30px;
+    left: 5px;
+    border-radius: 10px;
+    
+}
+
+.Language_menu a p{
+    position: relative;
+    margin-top: 5px;
+    height: 15px;
+    cursor: pointer;
+    font-family: calibri;
+    text-decoration: none;
+    font-size: 18px;    
+}
+.Language_menu a p:hover{
+    padding-left: 10px;
+    transition: 0.1s;
+}
+

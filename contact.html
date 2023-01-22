@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta  charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="Navigation_Bar.css">
+    <link rel="stylesheet" href="Language.css">
+    <link rel="stylesheet" href="language.js">
+    <link rel="stylesheet" href="homepage.css">
+  <style>
+
+  
+    .Contact_info{
+        width: 30%;
+        margin-left: 35%;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .contact{
+        font-family: Capriola;
+        font-size: 40px;
+        color: #0c0808;
+    }
+    .Direction{
+        font-family: Capriola;
+        font-size: 30px;
+        color: #666666;
+    }
+    .Dir1{
+        font-family: "Open Sans";
+        font-size: 20px;
+        color: #666666;
+    }
+    .Dir2{
+        font-family: "Open Sans";
+        font-size: 20px;
+        color: #666666;
+    }
+    .Tel{
+        font-family: Capriola;
+        font-size: 30px;
+        color: #666666;
+    }
+    .Email{
+        font-family: Capriola;
+        font-size: 30px;
+        color: #666666;
+    }
+    .Email2{
+        font-family: Capriola;
+        font-size: 30px;
+        color: #666666;
+    }
+
+  </style>
+<script>
+    function myFunction(){
+    document.getElementById("Language_menu").style.display = "block"
+    }
+    function mouseleave(){
+    document.getElementById("Language_menu").style.display = "none"
+    }
+    </script>
+</head>
+
+<body>
+<div>
+    <nav class="header">
+        <img class="logo" src="IMG/Logo/AS_Logo.png" alt="logo" >
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul class="Header">
+            <li><a class="active" href="indexES.html">Home</a></li>
+            <li><a id="AboutUs" href="aboutUs.html">Sobre Nosotros</a></li>
+            <li><a id="menu" href="Menu.html">Carta</a></li>
+            <li><a id="reservation" href="cartaES.html">Reservación</a></li>
+            <li> <a id="contact" href="contact.html" onmouseover="mouseleave()">Contacto</a></li>
+            <li> <img onmousedown="myFunction()" onmouseover="myFunction()" class="flag" src="IMG/Flags/es.svg" alt=""> </li>
+        </ul>
+    </nav> 
+</div>
+
+    <div class="Language_menu" id="Language_menu" onmouseleave="mouseleave()">
+        <a class="l_menu">
+            <p href="#" onclick="lang_to_EN()"><img class="FLAG_IMG"  src="IMG/Flags/gb.svg" alt="image1" onclick="lang_to_EN()">English</p>
+            <p href="#" onclick="toggleLanguage()"><img class="FLAG_IMG" src="IMG/Flags/fr.svg" alt="image1">Française</p>
+            <p href="#" onclick="toggleLanguage()"><img class="FLAG_IMG" src="IMG/Flags/es-ct.svg" alt="image1">Catalan</p>
+        </a>
+    </div>
+<div class="zzz"></div>
+ <div class="Contact_info">
+    <p class="Direction">Dirección</p>
+    <p class="Dir1">Carrer de Ramoneda, 40</p>
+    <p class="Dir2">08940 Cornellá de Llobregat (Barcelona)</p>
+    <p class="Tel">933 75 17 01</p>
+    <p class="Email">e-mail</p>
+    <p class="Email2">info@BarLaPatata.es</p>
+</div>
+
+
+<div class="mapouter">
+    <div class="gmap_canvas">
+        <iframe width="1880" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=bar%20la%20patata%20cornella&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <br><style>
+        .mapouter{
+            position:relative;
+            text-align:center;
+            height:450px;
+            width: 10px;
+            }
+            </style>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta  charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="Navigation_Bar.css">
+    <link rel="stylesheet" href="Language.css">
+    <link rel="stylesheet" href="language.js">
+    <link rel="stylesheet" href="homepage.css">
+  
+<script>
+    function myFunction(){
+    document.getElementById("Language_menu").style.display = "block"
+    }
+    function mouseleave(){
+    document.getElementById("Language_menu").style.display = "none"
+    }
+
+
+    
+    </script>
+</head>
+
+<body>
+<div>
+    <nav class="header">
+        <img class="logo" src="IMG/Logo/AS_Logo.png" alt="logo" >
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul class="Header">
+            <li><a class="active" href="indexES.html">Home</a></li>
+            <li><a id="AboutUs" href="aboutUs.html">Sobre Nosotros</a></li>
+            <li><a id="menu" href="Menu.html">Carta</a></li>
+            <li><a id="reservation" href="cartaES.html">Reservación</a></li>
+            <li> <a id="contact" href="contact.html" onmouseover="mouseleave()">Contacto</a></li>
+            <li> <img onmousedown="myFunction()" onmouseover="myFunction()" class="flag" src="IMG/Flags/es.svg" alt=""> </li>
+        </ul>
+    </nav> 
+</div>
+
+    <div class="Language_menu" id="Language_menu" onmouseleave="mouseleave()">
+        <a class="l_menu">
+            <p href="#" onclick="lang_to_EN()"><img class="FLAG_IMG"  src="IMG/Flags/gb.svg" alt="image1" onclick="lang_to_EN()">English</p>
+            <p href="#" onclick="toggleLanguage()"><img class="FLAG_IMG" src="IMG/Flags/fr.svg" alt="image1">Française</p>
+            <p href="#" onclick="toggleLanguage()"><img class="FLAG_IMG" src="IMG/Flags/es-ct.svg" alt="image1">Catalan</p>
+        </a>
+    </div>
+
+    <img class="background_img" src="IMG/Food/PATATA.jpg" alt="">
+    <p class="losung"> somos los mejores</p>
+
+
+
+</body>
+
+</html>

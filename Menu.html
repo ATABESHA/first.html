@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta  charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="Navigation_Bar.css">
+    <link rel="stylesheet" href="Language.css">
+    <link rel="stylesheet" href="language.js">
+    <link rel="stylesheet" href="menu_style.css">
+
+    <script>
+        function myFunction(){
+        document.getElementById("Language_menu").style.display = "block"
+        }
+        function mouseleave(){
+        document.getElementById("Language_menu").style.display = "none"
+        }
+
+        function menu_2(){
+        document.getElementById("Menu2").style.display = "block"
+        document.getElementById("Menu1").style.display = "none"
+        document.getElementById("Menu3").style.display = "none"  
+        }
+        function menu_1(){
+        document.getElementById("Menu1").style.display = "block"
+        document.getElementById("Menu2").style.display = "none"
+        document.getElementById("Menu3").style.display = "none"  
+        }
+        
+        </script>  
+</head>
+
+<body>
+<div>
+    <nav class="header">
+        <img class="logo" src="IMG/Logo/AS_Logo.png" alt="logo" >
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul class="Header">
+            <li><a class="active" href="indexES.html">Home</a></li>
+            <li><a href="aboutUs.html">Sobre Nosotros</a></li>
+            <li><a href="Menu.html">Carta</a></li>
+            <li><a href="#" onclick="menu_1()">Reservación</a></li>
+            <li> <a href="contact.html" onmouseover="mouseleave()">Contacto</a></li>
+            <li> <img onmousedown="myFunction()" onmouseover="myFunction()" class="flag" src="IMG/Flags/es.svg" alt=""> </li>
+        </ul>
+    </nav> 
+</div>
+
+    <div class="Language_menu" id="Language_menu" onmouseleave="mouseleave()">
+        <a class="l_menu">
+            <p href="#" onclick="lang_to_EN()"><img class="FLAG_IMG"  src="IMG/Flags/gb.svg" alt="image1" onclick="lang_to_EN()">English</p>
+            <p href="#" onclick="lang_to_FR()"><img class="FLAG_IMG" src="IMG/Flags/fr.svg" alt="image1">Française</p>
+            <p href="#" onclick="lang_to_CAT()"><img class="FLAG_IMG" src="IMG/Flags/es-ct.svg" alt="image1">Catalan</p>
+        </a>
+    </div>
+
+   <div class="zzz"> <p ></p> </div>
+   <div class="menustyle" >
+    <div class="menu_Style1" onclick="menu_1()">Menu Style_1</div>
+    <div class="menu_Style2" onclick="menu_2()">Menu Style_2</div>
+    <div class="menu_Style3" onclick="menu_3()">Menu Style_3</div>
+    </div>
+
+    <div id="Menu1">	
+        <div class="menu1">	<li class="Food_name">Patatas al horno</li>	 <li class="Price">€  1.2</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Ensaladilla Rusa</li>	 <li class="Price">€  4</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Huevo relleno</li>	 <li class="Price">€  1</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Boquerines en vinagre</li>	 <li class="Price">€  5</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Calamares romana</li>	 <li class="Price">€  7</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Chocos</li>	 <li class="Price">€  8.95</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Pulpo galleo</li>	 <li class="Price">€  13.9</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">patitas calamar</li>	 <li class="Price">€  7.95</LI> 	</div>  
+    	<div class="menu1">	<li class="Food_name">Boqueron frito</li>	 <li class="Price">€  7.95</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Pulpo plancha</li>	 <li class="Price">€  5</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Pulpitos</li>	 <li class="Price">€  8.9</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Sepia plancha</li>	 <li class="Price">€  8.95</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Pescado adobo</li>	 <li class="Price">€  8.5</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Gambas plancha</li>	 <li class="Price">€  12</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Morros</li>	 <li class="Price">€  6</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Chipirones</li>	 <li class="Price">€  7.95</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Lacon</li>	 <li class="Price">€  6.5</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Champiniones</li>	 <li class="Price">€  7</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Cochinillo</li>	 <li class="Price">€  8.95</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Pincho moruno</li>	 <li class="Price">€  3</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Callos</li>	 <li class="Price">€  6.75</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Codorniz</li>	 <li class="Price">€  3</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Almejas</li>	 <li class="Price">€  10</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Croquetas</li>	 <li class="Price">€  6.5</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Caracolillos vaso</li>	 <li class="Price">€  3.5</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Pimientos padron</li>	 <li class="Price">€  7</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Chorizo al vino</li>	 <li class="Price">€  6</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Chorizo soria</li>	 <li class="Price">€  6.5</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Queso</li>	 <li class="Price">€  6.5</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Berberechos conserva</li>	 <li class="Price">€  6.5</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Olivas rellenas</li>	 <li class="Price">€  2.7</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Bolsa patatas</li>	 <li class="Price">€  1.5</LI> 	</div>   	
+    	<div class="menu1">	<li class="Food_name">Patatas fritas</li>	 <li class="Price">€  5</LI> 	</div>   	
+        </div>
+
+        <div id="Menu2">									
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Patatas al horno</li>	 <li class="Price">€  1.2</li> 	 </div>    	<li class="food_describtion">some desctibtionsome desctibtionsome desctibtionsome desctibtionsome desctibtsome desctibtionsome desctibtionsome desctibtionsome desctibtionionsome desctibtionsome desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Patatas al horno.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Ensaladilla Rusa</li>	 <li class="Price">€  4</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Ensaladilla Rusa.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Huevo relleno</li>	 <li class="Price">€  1</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Huevo relleno.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Boquerines en vinagre</li>	 <li class="Price">€  5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Boquerines en vinagre.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Calamares romana</li>	 <li class="Price">€  7</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Calamares romana.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Chocos</li>	 <li class="Price">€  8.95</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Chocos.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Pulpo galleo</li>	 <li class="Price">€  13.9</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Pulpo galleo.webp" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">patitas calamar</li>	 <li class="Price">€  7.95</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/patitas calamar.JPG" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Boqueron frito</li>	 <li class="Price">€  7.95</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Boqueron frito.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Pulpo plancha</li>	 <li class="Price">€  5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Pulpo plancha.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Pulpitos</li>	 <li class="Price">€  8.9</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Pulpitos.webp" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Sepia plancha</li>	 <li class="Price">€  8.95</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Sepia plancha.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Pescado adobo</li>	 <li class="Price">€  8.5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Pescado adobo.webp" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Gambas plancha</li>	 <li class="Price">€  12</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Gambas plancha.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Morros</li>	 <li class="Price">€  6</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Morros.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Chipirones</li>	 <li class="Price">€  7.95</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Chipirones.webp" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Lacon</li>	 <li class="Price">€  6.5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Lacon.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Champiniones</li>	 <li class="Price">€  7</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Champiniones.jpeg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Cochinillo</li>	 <li class="Price">€  8.95</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Cochinillo.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Pincho moruno</li>	 <li class="Price">€  3</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Pincho moruno.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Callos</li>	 <li class="Price">€  6.75</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Callos.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Codorniz</li>	 <li class="Price">€  3</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Codorniz.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Almejas</li>	 <li class="Price">€  10</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Almejas.webp" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Croquetas</li>	 <li class="Price">€  6.5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Croquetas.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Caracolillos vaso</li>	 <li class="Price">€  3.5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Caracolillos vaso.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Pimientos padron</li>	 <li class="Price">€  7</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Pimientos padron.jpeg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Chorizo al vino</li>	 <li class="Price">€  6</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Chorizo al vino.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Chorizo soria</li>	 <li class="Price">€  6.5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Chorizo soria.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Queso</li>	 <li class="Price">€  6.5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Queso.jpg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Berberechos conserva</li>	 <li class="Price">€  6.5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Berberechos conserva.jpeg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Olivas rellenas</li>	 <li class="Price">€  2.7</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Olivas rellenas.jpeg" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Bolsa patatas</li>	 <li class="Price">€  1.5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Bolsa patatas.webp" alt="image1">	</div>
+            <div class="menu2">	<div class="food">	<div class="Name_Price">	<li class="Food_name2">Patatas fritas</li>	 <li class="Price">€  5</li> 	 </div>    	<li class="food_describtion">some desctibtion</li>	</div>   	<img class="img1" src="IMG/Food/Patatas fritas.jpg" alt="image1">	</div>
+            </div>																																												
+        </body>
+
+</html>

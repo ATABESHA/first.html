@@ -1,0 +1,19 @@
+.HS1{
+    width: 100%;
+}
+.HS2{
+    width: 100%;
+}
+.HS3{
+    width: 100%;
+}
+.background_img{
+    width: 100%; 
+}
+.losung{
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    font-size: 100px;
+    color: white;
+}

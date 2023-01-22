@@ -1,0 +1,116 @@
+<div class="calendar_frame">
+    <div class="year_month_picker">
+        <div class="before_month"><</div>
+        <div class="actual_month">Today</div>
+        <div class="next_month">></div>
+    </div>
+    <div class="weekdays">
+        <p class="Mon">Mon</p>
+        <p class="Tues">Tues</p>
+        <p class="Wed">Wed</p>
+        <p class="Thurs">Thurs</p>
+        <p class="Fri">Fri</p>
+        <p class="Sat">Sat</p>
+        <p class="Sun">Sun</p>
+
+    </div>
+<div class="days">
+    <Div class="Day" ID="Day1">1</div>
+    <Div class="Day" ID="Day2">2</div>
+    <Div class="Day" ID="Day3">3</div>
+    <Div class="Day" ID="Day4">4</div>
+    <Div class="Day" ID="Day5">5</div>
+    <Div class="Day" ID="Day6">6</div>
+    <Div class="Day" ID="Day7">7</div>
+    <Div class="Day" ID="Day8">8</div>
+    <Div class="Day" ID="Day9">9</div>
+    <Div class="Day" ID="Day10">10</div>
+    <Div class="Day" ID="Day11">11</div>
+    <Div class="Day" ID="Day12">12</div>
+    <Div class="Day" ID="Day13">13</div>
+    <Div class="Day" ID="Day14">14</div>
+    <Div class="Day" ID="Day15">15</div>
+    <Div class="Day" ID="Day16">16</div>
+    <Div class="Day" ID="Day17">17</div>
+    <Div class="Day" ID="Day18">18</div>
+    <Div class="Day" ID="Day19">19</div>
+    <Div class="Day" ID="Day20">20</div>
+    <Div class="Day" ID="Day21">21</div>
+    <Div class="Day" ID="Day22">22</div>
+    <Div class="Day" ID="Day23">23</div>
+    <Div class="Day" ID="Day24">24</div>
+    <Div class="Day" ID="Day25">25</div>
+    <Div class="Day" ID="Day26">26</div>
+    <Div class="Day" ID="Day27">27</div>
+    <Div class="Day" ID="Day28">28</div>
+    <Div class="Day" ID="Day29">29</div>
+    <Div class="Day" ID="Day30">30</div>
+    <Div class="Day" ID="Day31">31</div>
+</div>
+
+
+
+.calendar_frame{
+
+    position: fixed;
+    border: 1px solid black;
+    top: 625px;
+    left: 484px;
+    background-color: blanchedalmond;
+}
+.calendar{
+    border: 1px solid black;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.year_month_picker{
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    width: 500px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.before_month{
+    padding-top: 5px;
+}
+.actual_month{
+    padding-top: 5px;
+}
+.next_month{
+    padding-top: 5px;
+}
+.weekdays{
+    border: 1px solid black;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.weekdays p{
+    padding-top: 0px;
+    padding-left: 20px;
+}
+.days{
+    height: 300px;
+    border: 1px solid black;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.Day{
+    border: 1px solid black;
+    background-color: rgb(209, 209, 209);
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;   
+    cursor: pointer;     
+}
+.Day:hover{
+    background-color: aliceblue;
+    color: black;
+}
